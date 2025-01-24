@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo list</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body class="container">
+    <h1 class="title">ToDo list</h1>
+    <div class="wrap">
+      <input
+        type="text"
+        class="input"
+        id="inputElem"
+        placeholder="Put your task"
+        value=""
+        autocomplete="off"
+      />
+      <button type="button" class="button" id="btn" onclick="addTask()">
+        Add
+      </button>
+    </div>
+    <ul class="list">
+      <li class="item"></li>
+    </ul>
+
+    <script>
+      let list = document.querySelector(".list");
+
+      const addTask = () => {
+        const input = document.getElementById("inputElem");
+        const task = document.getElementById("inputElem").value;
+
+        console.log(task);
+
+        const item = document.createElement("li");
+
+        item.classList.add("item");
+        item.textContent = task;
+
+        list.append(item);
+
+        input.value = "";
+      };
+
+      list.addEventListener("click", function (evt) {
+        if (evt.target.tagName === "LI") {
+          evt.target.classList.toggle("item_checked");
+        }
+      });
+    </script>
+  </body>
+</html>

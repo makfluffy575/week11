@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.title {
+  margin: 2rem 0 2rem 1rem;
+}
+.wrap-items {
+  display: flex;
+  flex-direction: column;
+  max-width: 60rem;
+}
+.wrap-item {
+  display: flex;
+  justify-content: space-between;
+}
+.wrap-item-info {
+  display: flex;
+}
+.wrap-item-photo {
+  height: 150px;
+  min-width: 150px;
+  padding: 1rem;
+}
+.item-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.wrap-item-text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 1rem;
+}
+.item-title {
+  font-size: 1.3rem;
+}
+.text {
+  margin-top: 1rem;
+  color: grey;
+}
+.price {
+  font-weight: 800;
+  min-width: 5rem;
+  display: flex;
+  margin: 1rem;
+}
+.wrap-result {
+  max-width: 60rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 1rem 1rem 1rem;
+}
+.btn-promo {
+  height: 3.5rem;
+  background-color: black;
+  color: azure;
+  font-size: 1.4rem;
+  padding: 0.8rem;
+}
+.btn-promo:hover{
+  background-color: rgba(225, 194, 70, 0.758);
+  border: rgba(225, 194, 70, 0.758);
+}
+.btn-promo:active{
+  background-color: rgb(247, 246, 246);
+  color: black;
+}
+.btn-promo:disabled{
+  background-color: rgb(123, 122, 122);
+  border: rgb(123, 122, 122);
+  color: white;
+}
+.total-sum {
+  font-size: 1.4rem;
+  font-weight: 800;
+  align-self: center;
+}

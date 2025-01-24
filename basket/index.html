@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basket</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <h1 class="title">Корзина</h1>
+    <!-- COAT -->
+    <div class="wrap-items">
+      <div class="wrap-item">
+        <div class="wrap-item-info">
+          <div class="wrap-item-photo">
+            <img src="./assets/img/coat.jpg" alt="coat" class="item-img" />
+          </div>
+          <div class="wrap-item-text">
+            <h2 class="item-title">Куртка RESERVED</h2>
+            <p class="text">Цвет: Белый</p>
+            <p class="text">Размер: S</p>
+            <p class="text">Количество: 1</p>
+          </div>
+        </div>
+        <p class="price" id="coat-price"></p>
+      </div>
+    </div>
+
+    <!-- Sneakers -->
+    <div class="wrap-items">
+      <div class="wrap-item">
+        <div class="wrap-item-info">
+          <div class="wrap-item-photo">
+            <img src="./assets/img/sneakers.webp" alt="coat" class="item-img" />
+          </div>
+          <div class="wrap-item-text">
+            <h2 class="item-title">Кроссовки Lacoste</h2>
+            <p class="text">Цвет: Белый</p>
+            <p class="text">Размер: 37</p>
+            <p class="text">Количество: 1</p>
+          </div>
+        </div>
+        <p class="price" id="sneakers-price"></p>
+      </div>
+    </div>
+
+    <!-- T-shirt -->
+    <div class="wrap-items">
+      <div class="wrap-item">
+        <div class="wrap-item-info">
+          <div class="wrap-item-photo">
+            <img src="./assets/img/t-shirt.png" alt="coat" class="item-img" />
+          </div>
+          <div class="wrap-item-text">
+            <h2 class="item-title">Футболка Mango</h2>
+            <p class="text">Цвет: Бежевый</p>
+            <p class="text">Размер: S</p>
+            <p class="text">Количество: 1</p>
+          </div>
+        </div>
+        <p class="price" id="t-shirt-price"></p>
+      </div>
+    </div>
+
+    <!-- bag -->
+    <div class="wrap-items">
+      <div class="wrap-item">
+        <div class="wrap-item-info">
+          <div class="wrap-item-photo">
+            <img src="./assets/img/bag.jpg" alt="coat" class="item-img" />
+          </div>
+          <div class="wrap-item-text">
+            <h2 class="item-title">Сумка Furla</h2>
+            <p class="text">Цвет: Черный</p>
+            <p class="text">Количество: 1</p>
+          </div>
+        </div>
+        <p class="price" id="bag-price"></p>
+      </div>
+    </div>
+
+    <!-- promocode and total result -->
+    <div class="wrap-result">
+      <button class="btn-promo" onclick="applyPromo()">
+        Использовать купон на 20%
+      </button>
+      <p class="total-sum"></p>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
